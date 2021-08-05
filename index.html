@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Mapbox</title>
+    <!-- Bootstrap 5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+<header class="bg-dark p-2">
+    <div class="container">
+        <h1 class="text-light">Map Mapbox</h1>
+    </div>
+</header>
+
+<!-- Main -->
+<main class="p-1">
+    <div class="container">
+        <div id="map">
+
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer id="footer" class="bg-dark p-5">
+    <div class="conatiner">
+        <p class="text-light text-center">
+            &copy;Copyright reserved. Design and developed by <a href="mailto:udehsuccess2@gmail.com">Udeh Success</a>
+        </p>
+    </div>
+</footer>
+
+    <!-- Thirty Party Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidWRlaHN1Y2Nlc3MiLCJhIjoiY2tyeXp3ejEzMTVlMzJvbnA1bmx5ejJkaCJ9.fkmVuKkz19uGrRw7TOZe0Q';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        // center: [7.5463885, 6.4583661], // Longitude, Latitude
+        // zoom: 0
+        });
+        </script>
+</body>
+</html>
